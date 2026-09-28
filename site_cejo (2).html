@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEJO - Escola Estadual Jardim Oriente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#inicio" class="flex-shrink-0 flex items-center gap-2">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            CJ
+                        </div>
+                        <span class="font-bold text-2xl text-blue-900">CEJO</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-slate-600 hover:text-blue-600 transition-colors px-3 py-2 rounded-md font-medium">Início</a>
+                    <a href="#sobre" class="text-slate-600 hover:text-blue-600 transition-colors px-3 py-2 rounded-md font-medium">Sobre a Escola</a>
+                    <a href="#equipe" class="text-slate-600 hover:text-blue-600 transition-colors px-3 py-2 rounded-md font-medium">Equipe de Desenvolvimento</a>
+                    <a href="#contato" class="bg-blue-600 text-white hover:bg-blue-700 transition-colors px-4 py-2 rounded-md font-medium">Contato</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-blue-600 focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Início</a>
+                <a href="#sobre" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Sobre a Escola</a>
+                <a href="#equipe" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Equipe de Desenvolvimento</a>
+                <a href="#contato" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 hover:bg-blue-50">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-bg text-white py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+                Bem-vindo à <span class="text-blue-200">Escola Estadual Jardim Oriente</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-10">
+                Construindo o futuro através da educação, tecnologia e colaboração. Conheça o novo portal do CEJO, feito por alunos para a comunidade.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#sobre" class="bg-white text-blue-900 hover:bg-blue-50 px-8 py-3 rounded-full font-semibold shadow-lg transition-all transform hover:-translate-y-1">Conheça o CEJO</a>
+                <a href="#equipe" class="bg-blue-700 border border-blue-400 text-white hover:bg-blue-600 px-8 py-3 rounded-full font-semibold shadow-lg transition-all">Nossa Equipe</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section id="sobre" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-blue-900 sm:text-4xl">Sobre a Nossa Escola</h2>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-slate-800 mb-4">Tradição e Inovação no Jardim Oriente</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">
+                            A Escola Estadual Jardim Oriente (CEJO) tem o compromisso de oferecer uma educação de qualidade, preparando nossos alunos não apenas para os desafios acadêmicos, mas para a vida em sociedade e o mercado de trabalho.
+                        </p>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            Acreditamos no potencial de cada estudante. Este site é um exemplo vivo disso: um projeto desenvolvido inteiramente por um grupo dedicado de alunos do CEJO, aplicando conhecimentos de tecnologia na prática.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-slate-700">
+                                <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Ensino de Qualidade
+                            </li>
+                            <li class="flex items-center text-slate-700">
+                                <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Incentivo à Tecnologia
+                            </li>
+                            <li class="flex items-center text-slate-700">
+                                <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Projetos Colaborativos
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <!-- Imagem placeholder da escola -->
+                        <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=CEJO+-+Escola+Jardim+Oriente" alt="Fachada da Escola CEJO" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipe" class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-blue-900 sm:text-4xl">Equipe de Desenvolvimento</h2>
+                    <div class="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Conheça o grupo de 7 estudantes responsáveis por programar e dar vida ao site oficial do CEJO.</p>
+                </div>
+
+                <!-- Grid da Equipe -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+                    
+                    <!-- Lider - Destacado -->
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-6 text-center w-full max-w-sm border-t-4 border-blue-600 sm:col-span-2 lg:col-span-4 lg:w-1/3">
+                        <img src="https://placehold.co/150x150/2563eb/ffffff?text=R" alt="Rielsen" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-blue-100 object-cover">
+                        <h3 class="text-xl font-bold text-slate-900">Rielsen</h3>
+                        <p class="text-blue-600 font-medium mb-2">Líder do Projeto</p>
+                        <p class="text-sm text-slate-500">Coordena a equipe e garante a entrega das funcionalidades do site.</p>
+                    </div>
+
+                    <!-- Membros -->
+                    <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 text-center w-full">
+                        <img src="https://placehold.co/150x150/cbd5e1/475569?text=N" alt="Nikolas" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-lg font-bold text-slate-900">Nikolas</h3>
+                        <p class="text-sm text-blue-500 font-medium">Programador</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 text-center w-full">
+                        <img src="https://placehold.co/150x150/cbd5e1/475569?text=A" alt="Ana" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-lg font-bold text-slate-900">Ana</h3>
+                        <p class="text-sm text-blue-500 font-medium">Programadora / Design</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 text-center w-full">
+                        <img src="https://placehold.co/150x150/cbd5e1/475569?text=P" alt="Pedrin" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-lg font-bold text-slate-900">Pedrin</h3>
+                        <p class="text-sm text-blue-500 font-medium">Programador</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 text-center w-full">
+                        <img src="https://placehold.co/150x150/cbd5e1/475569?text=I" alt="Italo" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-lg font-bold text-slate-900">Italo</h3>
+                        <p class="text-sm text-blue-500 font-medium">Programador</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 text-center w-full">
+                        <img src="https://placehold.co/150x150/cbd5e1/475569?text=M" alt="Miguel" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-lg font-bold text-slate-900">Miguel</h3>
+                        <p class="text-sm text-blue-500 font-medium">Programador</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 text-center w-full">
+                        <img src="https://placehold.co/150x150/cbd5e1/475569?text=L" alt="Luan" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-lg font-bold text-slate-900">Luan</h3>
+                        <p class="text-sm text-blue-500 font-medium">Programador</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-20 bg-blue-900 text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-6">Fale com a Escola</h2>
+                <p class="mb-10 text-blue-200">Tem alguma dúvida, sugestão ou quer saber mais sobre nossos projetos? Entre em contato!</p>
+                
+                <div class="bg-white text-slate-800 rounded-2xl p-8 max-w-2xl mx-auto shadow-2xl">
+                    <form class="space-y-4 text-left">
+                        <div>
+                            <label for="nome" class="block text-sm font-medium text-slate-700 mb-1">Nome Completo</label>
+                            <input type="text" id="nome" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none" placeholder="Seu nome">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-1">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none" placeholder="seu@email.com">
+                        </div>
+                        <div>
+                            <label for="mensagem" class="block text-sm font-medium text-slate-700 mb-1">Mensagem</label>
+                            <textarea id="mensagem" rows="4" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none" placeholder="Escreva sua mensagem aqui..."></textarea>
+                        </div>
+                        <button type="button" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Escola Estadual Jardim Oriente (CEJO). Todos os direitos reservados.</p>
+            <p class="mt-2 text-sm">Desenvolvido com orgulho por: Rielsen, Nikolas, Ana, Pedrin, Italo, Miguel e Luan.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica do Menu Mobile
+        const btnMenu = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const linksMenu = menu.querySelectorAll('a');
+
+        btnMenu.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Fechar menu mobile ao clicar em um link
+        linksMenu.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll handling para links internos se o browser não suportar a classe do tailwind (fallback)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
